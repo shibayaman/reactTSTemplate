@@ -1,0 +1,28 @@
+{
+  "name": "reacttstemplate",
+  "version": "1.0.0",
+  "description": "React, TypeScript, webpack、Babel, EsLint, Prettierあたりのボイラープレートを考えてた。",
+  "scripts": {
+    "build": "webpack --env.NODE_ENV=production && cp ./public/index.html ./build",
+    "dev": "webpack-dev-server --env.NODE_ENV=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shibayaman/reactTSTemplate.git"
+  },
+  "author": "shibayaman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shibayaman/reactTSTemplate/issues"
+  },
+  "homepage": "https://github.com/shibayaman/reactTSTemplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
