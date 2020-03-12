@@ -1,0 +1,32 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2018,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended"
+	],
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"rules": {
+	},
+	"overrides": [
+		{
+			"files": ["*.+(ts|tsx)"],
+			"extends": [
+				"plugin:@typescript-eslint/eslint-recommended",
+				"plugin:@typescript-eslint/recommended"
+			]
+		}
+	]
+}
