@@ -7,6 +7,6 @@ const App: React.FC = () => {
       <h1>Hello World</h1>
     </div>
   );
-}
+};
 
 ReactDom.render(<App />, document.getElementById('app'));

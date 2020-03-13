@@ -3,17 +3,15 @@ module.exports = {
     [
       '@babel/preset-env',
       {
-        modules: false
-      }
+        modules: false,
+      },
     ],
     '@babel/preset-react',
-    '@babel/preset-typescript'
+    '@babel/preset-typescript',
   ],
   env: {
     test: {
-      plugins: [
-        'transform-es2015-modules-commonjs',
-      ],
+      plugins: ['transform-es2015-modules-commonjs'],
     },
-  }
-}
+  },
+};

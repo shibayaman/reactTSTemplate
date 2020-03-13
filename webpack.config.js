@@ -8,20 +8,20 @@ module.exports = env => ({
     path: path.resolve(__dirname, 'build'),
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx|ts|tsx)$/,
         use: 'babel-loader',
-        exclude: /node_modules/
-      }
-    ]
+        exclude: /node_modules/,
+      },
+    ],
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
     compress: true,
-    port: 8000
-  }
+    port: 8000,
+  },
 });
